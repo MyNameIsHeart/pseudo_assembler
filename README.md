@@ -3,7 +3,7 @@
 
 <head>
   
-<h1>Pseudo Assembler - </h1>
+<h1>Pseudo Assembler</h1>
 <h3>A multi-pass pseudo assembler for a predefined, made-up, Assembly-type language.<br>Developed in C.</h3>
 
 </head>
