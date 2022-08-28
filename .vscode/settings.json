@@ -1,0 +1,7 @@
+{
+    "C_Cpp.errorSquiggles": "Disabled",
+    "files.associations": {
+        "symbol_table_types.h": "c",
+        "utils_types.h": "c"
+    }
+}

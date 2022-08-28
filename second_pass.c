@@ -1,8 +1,9 @@
 #include "second_pass.h"
 
 /* second pass of the assembler over the assembly code */
-void second_pass(FILE *file_pointer, Machine_code_image *machine_codeP, Label *head, int code_counter_final, int data_counter_final, int errors_flag, char *file_name)
+int second_pass(FILE *file_pointer, Machine_code_image *machine_codeP, Label *head, int code_counter_final, int data_counter_final, int errors_flag, char *file_name)
 {
+	int exit_status = 0;
 	int data_counter =0;	
 	int j;
 	int i;
@@ -26,12 +27,12 @@ void second_pass(FILE *file_pointer, Machine_code_image *machine_codeP, Label *h
 	create_command_table(command_table);	/* create the command table */
 	if(errors_flag == True)
 	{
-		
 		/* first pass detected errors */		
 		free_list(&head);
 		fclose(file_pointer);		
 		printf("\nerrors in first pass, file: %s\n", file_name);
-		return;
+		exit_status = _EXIT_FAILURE;
+		return exit_status;
   	}
 	
 	while(fgets(line, MAX_IN_LINE, file_pointer)) /* run over the lines in the source code */
@@ -313,4 +314,5 @@ void second_pass(FILE *file_pointer, Machine_code_image *machine_codeP, Label *h
 		}
 		free_list(&head);
 	}
+	return exit_status;
 }

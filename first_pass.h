@@ -21,7 +21,7 @@
     void update_data_value(Label *, int);
 
     /* functions in use from second_pass.c */
-    void second_pass(FILE *, Machine_code_image *, Label *, int, int, int, char *);
+    int second_pass(FILE *, Machine_code_image *, Label *, int, int, int, char *);
 
     /* functions in use from utils.c */
     FILE * open_file(char *, char *);

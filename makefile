@@ -10,7 +10,7 @@ command_table.o : command_table.c command_table.h libs.h command_table_types.h u
 first_pass.o : first_pass.c first_pass.h libs.h symbol_table_types.h utils_types.h command_table_types.h exit_codes.h
 	gcc -c -Wall -ansi -pedantic first_pass.c -o first_pass.o
 
-second_pass.o : second_pass.c second_pass.h libs.h symbol_table_types.h utils_types.h command_table_types.h
+second_pass.o : second_pass.c second_pass.h libs.h symbol_table_types.h utils_types.h command_table_types.h exit_codes.h
 	gcc -c -Wall -ansi -pedantic second_pass.c -o second_pass.o
 
 symbol_table.o : symbol_table.c symbol_table.h libs.h symbol_table_types.h

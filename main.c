@@ -7,7 +7,7 @@ int main(int argc, char * argv[])
 
 	if(argc == 1) /* no files were inserted */
 	{
-		puts("\nNo files were inserted. Exiting...");
+		puts("\nNo files were inserted.");
 		return(_EXIT_NO_FILES);
 	}	
 	
@@ -16,9 +16,13 @@ int main(int argc, char * argv[])
 		exit_status = first_pass(argv[index]); /* send the files to the assembler */
 
 		if (exit_status == _EXIT_FILES_FAILURE)
-			puts("\nSomething went wrong - didn't open file. Exiting...");
+			puts("\nSomething went wrong - didn't open file.");
 
+		if (exit_status == _EXIT_SUCCESS)
+			puts("\nProgram finished successfully.");
 	}
+
+	puts("\nExiting...");
 
 	return exit_status;
 }

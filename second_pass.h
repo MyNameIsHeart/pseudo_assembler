@@ -5,14 +5,15 @@
     #define SECOND_PASS_H
 
     #include "libs.h"                   /* include C standard libraries */
+    #include "exit_codes.h"             /* include exit codes header */
     #include "symbol_table_types.h"	    /* include symbol table's new types */
     #include "utils_types.h"            /* include utils' new types */
-    #include "command_table_types.h"   /* include command table's new types */
+    #include "command_table_types.h"    /* include command table's new types */
 
     /* function prototypes */
 
     /* second pass of the assembler over the assembly code */
-    void second_pass(FILE *, Machine_code_image *, Label *, int, int, int, char *);
+    int second_pass(FILE *, Machine_code_image *, Label *, int, int, int, char *);
 
     /* functions in use from symbol_table.c */
     void free_list(Label **);

@@ -5,7 +5,8 @@ int first_pass(char *s)
 {
 
 	/* <variables> */
-	
+
+	int exit_status = 1;	
 	int data_counter = 0;				/* counter for data image lines */
 	int code_counter = 100;				/* counter for code image lines */
 	int data_counter_final;				/* final value of data_counter */ 
@@ -46,7 +47,10 @@ int first_pass(char *s)
 	file_pointer = open_file(s, "r");				/* open the given file with function "open_file" (from utils) */
 	
 	if(file_pointer == NULL)						/* file didn't open */
-		return _EXIT_FILES_FAILURE;
+	{
+		exit_status = _EXIT_FILES_FAILURE;
+		return exit_status;
+	}
 
 	create_command_table(command_table);			/* create the command table using the array command_table */
 	
@@ -303,9 +307,9 @@ int first_pass(char *s)
 
 	update_data_value(head,code_counter_final); /* update the value of every data label by adding the final value of code_counter to it */
 
-	second_pass(file_pointer, machine_code, head , code_counter_final, data_counter_final, errors_flag,s); /* call the second pass of the assembler */
+	exit_status = second_pass(file_pointer, machine_code, head , code_counter_final, data_counter_final, errors_flag,s); /* call the second pass of the assembler */
 	
-	return _EXIT_SUCCESS;
+	return exit_status;
 
 }
 
