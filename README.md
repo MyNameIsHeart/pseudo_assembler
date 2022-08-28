@@ -3,8 +3,8 @@
 
 <head>
   
-<h1>Assembler - </h1>
-<h3>For a predefined, made-up, Assembly-type language.<br>Developed in C.</h3>
+<h1>Pseudo Assembler - </h1>
+<h3>A multi-pass pseudo assembler for a predefined, made-up, Assembly-type language.<br>Developed in C.</h3>
 
 </head>
 
@@ -13,8 +13,10 @@
 <img style="margin-left: auto; margin-right: auto;" src="https://contribute.geeksforgeeks.org/wp-content/uploads/assem.png">
 </p>
 
-<p align="center">run using ./assembler ps (must have a file named ps.as in the same directory)</p>
+<p align="center">Run using ./assembler [name_of_file].asm</p>
+<br>
+<p align="center">The input should consist of one file: '.asm'.</p>
+<p align="center">The output should consist of three files: '.bin', '.ent' and '.ext'. </p>
 
 </body>
-
 </html>
