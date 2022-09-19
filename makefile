@@ -1,4 +1,6 @@
-assembler : command_table.o first_pass.o second_pass.o main.o symbol_table.o utils.o
+all: compilation_message compile clean_object_files
+
+compile : command_table.o first_pass.o second_pass.o main.o symbol_table.o utils.o
 	gcc -g -Wall -ansi -pedantic command_table.o first_pass.o second_pass.o main.o symbol_table.o utils.o -o assembler
 
 main.o : main.c main.h libs.h exit_codes.h
@@ -19,6 +21,9 @@ symbol_table.o : symbol_table.c symbol_table.h libs.h symbol_table_types.h
 utils.o : utils.c libs.h utils_types.h command_table_types.h
 	gcc -c -Wall -ansi -pedantic utils.c -o utils.o
 
-clean:
+clean_object_files:
+	@echo "\ncleaning up (object files)...\n"
 	rm *.o 
-	rm assembler
+
+compilation_message:
+	@echo "\ncompiling...\n"
