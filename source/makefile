@@ -28,5 +28,12 @@ clean:
 	@echo "\ncleaning up (object files)...\n"
 	rm *.o 
 
+full_clean:
+	@echo "\ncleaning up...\n"
+	rm *.o
+	m assembler.out
+
 rm:
 	rm assembler.out
+
+
