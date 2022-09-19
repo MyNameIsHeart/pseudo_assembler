@@ -11,7 +11,7 @@ A multi-pass pseudo assembler for a predefined, made-up, Assembly-type language.
 Developed in C.
 
 <p align="center">
-<img src="./images/assembler.png" alt="assembler.png" width="499" height="133">
+<img src="./images/assembler.png" alt="assembler.png" width="375" height="100">
 </p>
 
 ## Table of Contents
