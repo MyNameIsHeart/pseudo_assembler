@@ -249,10 +249,10 @@ int second_pass(FILE *file_pointer, Machine_code_image *machine_codeP, Label *he
 	fclose(file_pointer);
 	if(errors_flag == False) /* verify that there are no errors before creating the output files */
 	{
-		/* create the .obj file */		
+		/* create the object file */		
 		new_file_name = (char *) malloc(sizeof(char)*(strlen(file_name)));
 		copy_n_str(file_name,new_file_name , strlen(file_name)-4); /* copy the name of the file without the extension */
-		strcat(new_file_name,".obj"); /* add the extension */
+		strcat(new_file_name,".o"); /* add the extension */
 		new_file_pointer = fopen(new_file_name,"w");
 		free(new_file_name);
 		j=100;		
