@@ -2,7 +2,7 @@
 
 [[Source Code]][src]
 
-[src]:          https://github.com/MyNameIsHeart/pseudo_assembler/source
+[src]:          ./source
 
 A multi-pass pseudo assembler for a predefined, made-up, Assembly-type language.
 Developed in C.
