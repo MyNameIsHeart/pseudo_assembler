@@ -73,7 +73,7 @@ This project includes a makefile for easy compilation on linux distributions:
 ```
 
 <p align="center">
-  <img src="./images/full_clean.png" alt="full_clean.png" width="850">
+  <img src="./images/full_clean.png" alt="full_clean.png" width="900">
 </p>
 
 </details>
@@ -94,3 +94,4 @@ The output should consist of one to three files:</br>
 <p align="center">
   <img src="./images/example_run.png" alt="example_run.png" width="500">
 </p>
+
