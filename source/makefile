@@ -1,4 +1,4 @@
-all: compilation_message compile clean_object_files
+all: compilation_message compile clean
 
 compilation_message:
 	@echo "\ncompiling...\n"
@@ -24,7 +24,7 @@ symbol_table.o : symbol_table.c symbol_table.h libs.h symbol_table_types.h
 utils.o : utils.c libs.h utils_types.h command_table_types.h
 	gcc -c -Wall -ansi -pedantic utils.c -o utils.o
 
-clean_object_files:
+clean:
 	@echo "\ncleaning up (object files)...\n"
 	rm *.o 
 
