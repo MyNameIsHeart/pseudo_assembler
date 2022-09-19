@@ -1,4 +1,6 @@
-# Pseudo Assembler [![Source Code]][src]
+# Pseudo Assembler
+
+[[Source Code]][src]
 
 [src]:          https://github.com/MyNameIsHeart/pseudo_assembler/source
 
