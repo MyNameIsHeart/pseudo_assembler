@@ -7,11 +7,11 @@
 A multi-pass pseudo assembler for a predefined, made-up, Assembly-type language.
 Developed in C.
 
-
+<p align="center">
 <img src="./images/assembler.png" alt="assembler.png" width="499" height="133">
+</p>
 
-
-## Compilation
+<details><summary>## Compilation</summary>
 
 This project includes a makefile for easy compilation on linux distributions:
 
@@ -46,3 +46,4 @@ With additional rules such as:
 <p align="center">
   <img src="./images/full_clean.png" alt="full_clean.png" width="738">
 </p>
+</details>
