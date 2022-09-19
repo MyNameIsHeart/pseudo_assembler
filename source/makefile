@@ -27,3 +27,6 @@ clean_object_files:
 
 compilation_message:
 	@echo "\ncompiling...\n"
+
+rm:
+	rm assembler.out
