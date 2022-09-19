@@ -11,7 +11,7 @@ Developed in C.
 <img src="./images/assembler.png" alt="assembler.png" width="499" height="133">
 </p>
 
-<details><summary><h2>Compilation</h2></summary>
+## Compilation
 
 This project includes a makefile for easy compilation on linux distributions:
 
@@ -21,7 +21,7 @@ This project includes a makefile for easy compilation on linux distributions:
   <img src="./images/make.png" alt="make.png" width="738">
 </p>
 
-With additional rules such as:
+<details><summary>Additional rules</summary>
 
 * compile:
 
@@ -46,4 +46,3 @@ With additional rules such as:
 <p align="center">
   <img src="./images/full_clean.png" alt="full_clean.png" width="738">
 </p>
-</details>
