@@ -29,7 +29,7 @@ This project includes a makefile for easy compilation on linux distributions:
 ```
 
 <p align="center">
-  <img src="./images/make.png" alt="make.png" width="800">
+  <img src="./images/make.png" alt="make.png" width="900">
 </p>
 
 <details><summary>Additional rules</summary>
