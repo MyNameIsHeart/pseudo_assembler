@@ -1,5 +1,8 @@
 all: compilation_message compile clean_object_files
 
+compilation_message:
+	@echo "\ncompiling...\n"
+
 compile : command_table.o first_pass.o second_pass.o main.o symbol_table.o utils.o
 	gcc -g -Wall -ansi -pedantic command_table.o first_pass.o second_pass.o main.o symbol_table.o utils.o -o assembler.out
 
@@ -24,9 +27,6 @@ utils.o : utils.c libs.h utils_types.h command_table_types.h
 clean_object_files:
 	@echo "\ncleaning up (object files)...\n"
 	rm *.o 
-
-compilation_message:
-	@echo "\ncompiling...\n"
 
 rm:
 	rm assembler.out
