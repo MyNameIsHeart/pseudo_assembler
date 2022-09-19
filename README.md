@@ -69,6 +69,8 @@ This project includes a makefile for easy compilation on linux distributions:
   <img src="./images/full_clean.png" alt="full_clean.png" width="738">
 </p>
 
+</details>
+
 ## Usage
 
 The input should consist of one assembly file with the following extension - '.asm'.
