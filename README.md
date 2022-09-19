@@ -8,7 +8,7 @@ A multi-pass pseudo assembler for a predefined, made-up, Assembly-type language.
 Developed in C.
 
 <p align="center">
-    <img src="https://contribute.geeksforgeeks.org/wp-content/uploads/assem.png" alt="assembler.png">
+    <img src="./images/assembler.png" alt="assembler.png">
 </p>
 
 ## Compilation
@@ -16,5 +16,5 @@ Developed in C.
 This project includes a makefile for easy compilation on linux distributions. 
 
 <p align="center">
-  <img src="./images/make.png" alt="make_example.png" width="738">
+  <img src="./images/make.png" alt="make_example.png">
 </p>
