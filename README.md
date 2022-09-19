@@ -1,4 +1,7 @@
-# Pseudo Assembler
+# Pseudo Assembler [![License][license-badge]][license]
+
+[license-badge]: https://img.shields.io/github/license/ajeetdsouza/zoxide?color=lightgray&style=flat-square
+[license]: ./LICENSE
 
 [[Source Code]][src]
 
@@ -73,7 +76,7 @@ This project includes a makefile for easy compilation on linux distributions:
 
 ## Usage
 
-The input should consist of one assembly file with the following extension - '.asm'.
+The input should consist of one assembly file with the following extension - '.asm'.</br>
 The output should consist of three files, with the following extensions - '.bin', '.ent' and '.ext'.
 
 ```sh
