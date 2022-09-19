@@ -278,7 +278,7 @@ int second_pass(FILE *file_pointer, Machine_code_image *machine_codeP, Label *he
 		}
 		fclose(new_file_pointer);
 
-		printf("\entry flag = %d\n",entry_flag);
+		printf("\nentry flag = %d\n",entry_flag);
 		/* create the .ent file */
 		if(entry_flag == True)
 		{
