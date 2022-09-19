@@ -1,24 +1,16 @@
-<!DOCTYPE html>
-<html>
+# Pseudo Assembler [![Source Code]][src]
 
-<head>
-  
-<h1>Pseudo Assembler</h1>
-<h3>A multi-pass pseudo assembler for a predefined, made-up, Assembly-type language.<br>Developed in C.</h3>
+[src]:          https://github.com/MyNameIsHeart/pseudo_assembler/source
 
-</head>
+A multi-pass pseudo assembler for a predefined, made-up, Assembly-type language.
+Developed in C.
 
-<body>
-
-<br>
-<p align="center" width="100%">
 <img style="margin-left: auto; margin-right: auto;" src="https://contribute.geeksforgeeks.org/wp-content/uploads/assem.png">
+
+## Compilation
+
+This project includes a makefile for easy compilation on linux distributions. 
+
+<p align="center">
+  <img src="./images/make.png" alt="make example" width="738">
 </p>
-
-<p align="center">Run using ./assembler [name_of_file].asm</p>
-<br>
-<p>The input should consist of one file: '.asm'.</p>
-<p>The output should consist of three files: '.bin', '.ent' and '.ext'. </p>
-
-</body>
-</html>
