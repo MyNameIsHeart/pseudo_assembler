@@ -277,6 +277,8 @@ int second_pass(FILE *file_pointer, Machine_code_image *machine_codeP, Label *he
 		
 		}
 		fclose(new_file_pointer);
+
+		printf("\entry flag = %d\n",entry_flag);
 		/* create the .ent file */
 		if(entry_flag == True)
 		{
@@ -288,6 +290,7 @@ int second_pass(FILE *file_pointer, Machine_code_image *machine_codeP, Label *he
 			print_entry(new_file_pointer,head);
 			fclose(new_file_pointer);
 		}
+
 		printf("\nextern flag = %d\n",extern_flag);
 		/* create the .ext file */
 		if(extern_flag == True)
