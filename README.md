@@ -80,12 +80,16 @@ This project includes a makefile for easy compilation on linux distributions:
 
 ## Usage
 
-The input should consist of one assembly file with the following extension - '.asm'.</br>
-The output should consist of three files, with the following extensions - '.bin', '.ent' and '.ext'.
+The input should consist of one or more assembly files ('.asm' files).
 
 ```sh
     $ ./assembler.out [name_of_file].asm
 ```
+
+The output should consist of one to three files:</br>
+- The machine code, in the form of an object file ('.o')</br>
+- A file with information about external symbols ('.ext'); won't be created if the .extern command wasn't in use</br>
+- A file with information about entry symbols ('.ent'); won't be created if the .entry command wasn't in use</br>
 
 <p align="center">
   <img src="./images/example_run.png" alt="example_run.png" width="738">
