@@ -31,7 +31,7 @@ clean:
 full_clean:
 	@echo "\ncleaning up...\n"
 	rm *.o
-	m assembler.out
+	rm assembler.out
 
 rm:
 	rm assembler.out
