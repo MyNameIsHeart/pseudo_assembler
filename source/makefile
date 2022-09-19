@@ -1,7 +1,7 @@
 all: compilation_message compile clean_object_files
 
 compile : command_table.o first_pass.o second_pass.o main.o symbol_table.o utils.o
-	gcc -g -Wall -ansi -pedantic command_table.o first_pass.o second_pass.o main.o symbol_table.o utils.o -o assembler
+	gcc -g -Wall -ansi -pedantic command_table.o first_pass.o second_pass.o main.o symbol_table.o utils.o -o assembler.out
 
 main.o : main.c main.h libs.h exit_codes.h
 	gcc -c -Wall -ansi -pedantic main.c -o main.o
