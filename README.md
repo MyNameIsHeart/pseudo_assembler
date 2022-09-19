@@ -8,7 +8,7 @@ A multi-pass pseudo assembler for a predefined, made-up, Assembly-type language.
 Developed in C.
 
 <p align="center">
-    <img src="./images/assembler.png" alt="assembler.png">
+    <img src="./images/assembler.png" alt="assembler.png" width="738">
 </p>
 
 ## Compilation
