@@ -14,6 +14,10 @@ Developed in C.
 <img src="./images/assembler.png" alt="assembler.png" width="499" height="133">
 </p>
 
+## Table of Contents
+- [Compilation](#Compilation)
+- [Usage](#Usage)
+
 ## Compilation
 
 This project includes a makefile for easy compilation on linux distributions:
