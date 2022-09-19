@@ -249,10 +249,10 @@ int second_pass(FILE *file_pointer, Machine_code_image *machine_codeP, Label *he
 	fclose(file_pointer);
 	if(errors_flag == False) /* verify that there are no errors before creating the output files */
 	{
-		/* create the .bin file */		
+		/* create the object file */		
 		new_file_name = (char *) malloc(sizeof(char)*(strlen(file_name)));
 		copy_n_str(file_name,new_file_name , strlen(file_name)-4); /* copy the name of the file without the extension */
-		strcat(new_file_name,".bin"); /* add the extension */
+		strcat(new_file_name,".o"); /* add the extension */
 		new_file_pointer = fopen(new_file_name,"w");
 		free(new_file_name);
 		j=100;		
@@ -277,6 +277,8 @@ int second_pass(FILE *file_pointer, Machine_code_image *machine_codeP, Label *he
 		
 		}
 		fclose(new_file_pointer);
+
+		printf("\nentry flag = %d\n",entry_flag);
 		/* create the .ent file */
 		if(entry_flag == True)
 		{
@@ -288,6 +290,7 @@ int second_pass(FILE *file_pointer, Machine_code_image *machine_codeP, Label *he
 			print_entry(new_file_pointer,head);
 			fclose(new_file_pointer);
 		}
+
 		printf("\nextern flag = %d\n",extern_flag);
 		/* create the .ext file */
 		if(extern_flag == True)

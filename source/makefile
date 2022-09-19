@@ -1,5 +1,10 @@
-assembler : command_table.o first_pass.o second_pass.o main.o symbol_table.o utils.o
-	gcc -g -Wall -ansi -pedantic command_table.o first_pass.o second_pass.o main.o symbol_table.o utils.o -o assembler
+all: compilation_message compile clean
+
+compilation_message:
+	@echo "\ncompiling...\n"
+
+compile : command_table.o first_pass.o second_pass.o main.o symbol_table.o utils.o
+	gcc -g -Wall -ansi -pedantic command_table.o first_pass.o second_pass.o main.o symbol_table.o utils.o -o assembler.out
 
 main.o : main.c main.h libs.h exit_codes.h
 	gcc -c -Wall -ansi -pedantic main.c -o main.o
@@ -20,5 +25,15 @@ utils.o : utils.c libs.h utils_types.h command_table_types.h
 	gcc -c -Wall -ansi -pedantic utils.c -o utils.o
 
 clean:
+	@echo "\ncleaning up (object files)...\n"
 	rm *.o 
-	rm assembler
+
+full_clean:
+	@echo "\ncleaning up...\n"
+	rm *.o
+	rm assembler.out
+
+rm:
+	rm assembler.out
+
+
