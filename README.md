@@ -53,7 +53,7 @@ This project includes a makefile for easy compilation on linux distributions:
 ```
 
 <p align="center">
-  <img src="./images/clean.png" alt="clean.png" width="900">
+  <img src="./images/clean.png" alt="clean.png" width="1000">
 </p>
 
 * rm:
