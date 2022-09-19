@@ -75,5 +75,9 @@ The input should consist of one assembly file with the following extension - '.a
 The output should consist of three files, with the following extensions - '.bin', '.ent' and '.ext'.
 
 ```sh
-    $ ./assembler [name_of_file].asm
+    $ ./assembler.out [name_of_file].asm
 ```
+
+<p align="center">
+  <img src="./images/example_run.png" alt="example_run.png" width="738">
+</p>
