@@ -22,8 +22,7 @@ This project includes a makefile for easy compilation on linux distributions:
 </p>
 
 <details><summary>Additional rules</summary>
-
-
+<br>
 * compile:
 
 <p align="center">
