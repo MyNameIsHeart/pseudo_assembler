@@ -29,7 +29,7 @@ This project includes a makefile for easy compilation on linux distributions:
 ```
 
 <p align="center">
-  <img src="./images/make.png" alt="make.png" width="500">
+  <img src="./images/make.png" alt="make.png" width="750">
 </p>
 
 <details><summary>Additional rules</summary>
@@ -43,7 +43,7 @@ This project includes a makefile for easy compilation on linux distributions:
 ```
 
 <p align="center">
-  <img src="./images/compile.png" alt="compile.png" width="500">
+  <img src="./images/compile.png" alt="compile.png" width="600">
 </p>
 
 * clean:
@@ -53,7 +53,7 @@ This project includes a makefile for easy compilation on linux distributions:
 ```
 
 <p align="center">
-  <img src="./images/clean.png" alt="clean.png" width="500">
+  <img src="./images/clean.png" alt="clean.png" width="750">
 </p>
 
 * rm:
@@ -63,7 +63,7 @@ This project includes a makefile for easy compilation on linux distributions:
 ```
 
 <p align="center">
-  <img src="./images/rm.png" alt="rm.png" width="500">
+  <img src="./images/rm.png" alt="rm.png" width="750">
 </p>
 
 * full_clean:
@@ -73,7 +73,7 @@ This project includes a makefile for easy compilation on linux distributions:
 ```
 
 <p align="center">
-  <img src="./images/full_clean.png" alt="full_clean.png" width="500">
+  <img src="./images/full_clean.png" alt="full_clean.png" width="750">
 </p>
 
 </details>
