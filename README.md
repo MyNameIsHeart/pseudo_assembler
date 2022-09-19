@@ -29,7 +29,7 @@ This project includes a makefile for easy compilation on linux distributions:
 ```
 
 <p align="center">
-  <img src="./images/make.png" alt="make.png" width="738">
+  <img src="./images/make.png" alt="make.png" width="500">
 </p>
 
 <details><summary>Additional rules</summary>
@@ -43,7 +43,7 @@ This project includes a makefile for easy compilation on linux distributions:
 ```
 
 <p align="center">
-  <img src="./images/compile.png" alt="compile.png" width="738">
+  <img src="./images/compile.png" alt="compile.png" width="500">
 </p>
 
 * clean:
@@ -53,7 +53,7 @@ This project includes a makefile for easy compilation on linux distributions:
 ```
 
 <p align="center">
-  <img src="./images/clean.png" alt="clean.png" width="738">
+  <img src="./images/clean.png" alt="clean.png" width="500">
 </p>
 
 * rm:
@@ -63,7 +63,7 @@ This project includes a makefile for easy compilation on linux distributions:
 ```
 
 <p align="center">
-  <img src="./images/rm.png" alt="rm.png" width="738">
+  <img src="./images/rm.png" alt="rm.png" width="500">
 </p>
 
 * full_clean:
@@ -73,7 +73,7 @@ This project includes a makefile for easy compilation on linux distributions:
 ```
 
 <p align="center">
-  <img src="./images/full_clean.png" alt="full_clean.png" width="738">
+  <img src="./images/full_clean.png" alt="full_clean.png" width="500">
 </p>
 
 </details>
@@ -92,5 +92,5 @@ The output should consist of one to three files:</br>
 - A file with information about entry symbols ('.ent'); won't be created if the .entry command wasn't in use</br>
 
 <p align="center">
-  <img src="./images/example_run.png" alt="example_run.png" width="738">
+  <img src="./images/example_run.png" alt="example_run.png" width="500">
 </p>
