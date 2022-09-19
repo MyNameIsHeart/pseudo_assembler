@@ -1,8 +1,8 @@
 # vs code
 /.vscode
 
-# object files
-*.o
+# object files under soucre
+/source/*.o
 
 # executables
 *.out
