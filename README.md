@@ -7,7 +7,7 @@
 
 [src]:          ./source
 
-A multi-pass pseudo assembler for a predefined, made-up, Assembly-type language.
+A multi-pass assembler for a predefined, made-up, Assembly-type language.
 Developed in C.
 
 <p align="center">
